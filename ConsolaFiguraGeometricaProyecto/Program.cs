@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ConsolaFiguraGeometricaProyecto.Interface;
+using ConsolaFiguraGeometricaProyecto.Modelo;
 
 namespace ConsolaFiguraGeometricaProyecto
 {
@@ -11,6 +12,9 @@ namespace ConsolaFiguraGeometricaProyecto
     {
         static void Main(string[] args)
         {
+            var triangulo = new Triangulo(3, 2);
+            mostrarInformacion(triangulo);
+            Console.ReadKey();
         }
 
         public static void mostrarInformacion(IFiguraGeometrica figura)
